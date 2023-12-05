@@ -39,7 +39,7 @@ const services = () => {
         md:w-auto mx-auto
         items-center lg:flex-1">
           <img src={weather} alt="/" className="w-20 py-7" />
-          <h5 className="font-bold text-2xl lg:rtext-center">Weather Forecast</h5>
+          <h5 className="font-bold text-2xl lg:rtext-center xl:text-center">Weather Forecast</h5>
           <p className="text-center px-6 py-8">
             What look like a small patch of purple grass, above the five feet.
           </p>
