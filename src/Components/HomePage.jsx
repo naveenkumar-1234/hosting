@@ -5,7 +5,7 @@ import bag from "../assets/bag.png"
 
 const HomePage = () => {
   return (
-    <div className="grid lg:grid-flow-col lg:grid-cols-2 xl:px-4 lg:gap-5">
+    <div className=" grid lg:grid-flow-col lg:grid-cols-2 xl:px-4 lg:gap-5 ">
      <div className="lg:order-last"> 
         {/* <img className="  h-auto w-full py-3" src={Arrow} alt="/" />
         <img className=" absolute mt-14 w-[70%]  py-3 " src={imagegrid} alt="/" /> */}
