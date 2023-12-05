@@ -11,20 +11,24 @@ const NavBar = () => {
         </h5>
       </div>
       <div className="   ">
-        <ul className="hidden lg:flex space-x-4">
-          <li className="text-xl px-10 font-semibold">Home</li>
-          <li className="text-xl px-10">Discover</li>
-          <li className="text-xl px-10">Special Deals</li>
-          <li className="text-xl px-10">Contact</li>
+        <ul className="hidden lg:flex ">
+          <li className="text-xl px-7 font-semibold">Home</li>
+          <li className="text-xl px-7">Discover</li>
+          <li className="text-xl px-7">Special Deals</li>
+          <li className="text-xl px-7">Contact</li>
         </ul>
       </div>
       <div className="hidden md:flex ">
-        <button className="lg:px-6 text-lg">Log in</button>
-        <button className="lg:px-5 rounded-full bg-[#6d48b2] py-3 text-lg text-white">
+        <button className="lg:px-6 text-lg md:px-6 md:text-base">Log in</button>
+        <button
+          className="lg:px-5 
+        xl:py-3
+        md:py-2 md:px-4 md:text-base  rounded-full bg-[#6d48b2] py-3 text-lg text-white"
+        >
           Sign Up
         </button>
       </div>
-     <div className="lg:hidden md:hidden">
+      <div className="lg:hidden md:hidden  ">
         <img src={menuBar} alt="/" />
       </div>
     </div>
