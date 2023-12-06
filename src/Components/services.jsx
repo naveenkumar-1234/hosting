@@ -28,7 +28,9 @@ const services = () => {
         </div>
         <div className="border-2  rounded-3xl flex flex-col items-center
         lg:shadow-2xl lg:flex-1 md:w-auto mx-auto
-        ">
+        
+        "
+        >
           <img src={mobile} alt="/" className="w-20 py-7" />
           <h5 className="font-bold text-2xl">Easy Booking</h5>
           <p className="text-center px-6 py-8">
