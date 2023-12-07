@@ -1,13 +1,32 @@
 import menuBar from "../assets/menuBar.svg";
 import logo from "../assets/BrandLogo.png";
-
+import close from "../assets/close.png";
+import { useState } from "react";
+import { useRef, useEffect } from "react";
 const NavBar = () => {
-  const navbar=false;
-  const Press=()=>{
-   console.log(navbar);
-  }
+  const [isPressed, setIcon] = useState(false);
+
+  const drawerRef = useRef(null);
+
+  // useEffect(() => {
+  //   const handout = (e) => {
+  //     if (drawerRef.current && !drawerRef.current.contains(e.target)) {
+  //       setIcon(false);
+        
+  //     }
+  //   };
+   
+  //   document.addEventListener("click", handout);
+  //   return () => {
+  //     document.removeEventListener("click", handout);
+  //   };
+  // },[]);
+
+  const Press = () => {
+    setIcon(!isPressed)
+  };
   return (
-    <div className="mx-auto flex items-center px-4 py-9 justify-between lg:justify-between">
+    <div className="mx-auto flex items-center px-4 py-9 justify-between lg:justify-between relative">
       <div className="flex align-center text-2xl">
         <img src={logo} alt="/" className="lg:w-14 " />
         <h5 className="font-poppins font-bold px-2 pt-1 lg:text-4xl">
@@ -15,11 +34,11 @@ const NavBar = () => {
         </h5>
       </div>
       <div className="   ">
-        <ul className="hidden lg:flex ">
-          <li className="text-xl px-7 font-semibold">Home</li>
-          <li className="text-xl px-7">Discover</li>
-          <li className="text-xl px-7">Special Deals</li>
-          <li className="text-xl px-7">Contact</li>
+        <ul className={` lg:flex  hidden`}>
+          <li className="lg:text-xl lg:px-7  font-semibold">Home</li>
+          <li className="lg:text-xl lg:px-7">Discover</li>
+          <li className="lg:text-xl lg:px-7">Special Deals</li>
+          <li className="lg:text-xl lg:px-7">Contact</li>
         </ul>
       </div>
       <div className="hidden md:flex ">
@@ -32,8 +51,29 @@ const NavBar = () => {
           Sign Up
         </button>
       </div>
-      <div className="lg:hidden md:hidden  ">
-        <img src={menuBar} alt="/" onClick={Press}/>
+      <div className="lg:hidden md:hidden  " onClick={Press}>
+        {isPressed ? (
+          <img src={close} className="w-10" alt="/" />
+        ) : (
+          <img src={menuBar} alt="/" />
+        )}
+      </div>
+      <div
+        ref={drawerRef}
+        className={`transform transition-transform ${
+          isPressed ? "visible " : "hidden"
+        } absolute left-0 top-0  h-screen w-1/2
+      
+      bg-gray-200 bg-opacity-50 `}
+      >
+        <div className="py-7 px-7">
+          <ul className="text-xl mt-9 font-semibold text-black">
+            <li className="py-4 ">Home</li>
+            <li className="pb-4">Discover</li>
+            <li className="pb-4">Special Deals</li>
+            <li className="pb-4">Contact</li>
+          </ul>
+        </div>
       </div>
     </div>
   );

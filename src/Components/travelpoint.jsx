@@ -1,4 +1,4 @@
-import travelimg from "../assets/travel.png"
+import travelimg from "../assets/TravelImg.png"
 import Template from "./reusable/template.jsx"
 const travelpoint = () => {
   return (

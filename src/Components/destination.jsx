@@ -24,7 +24,7 @@ const destination = () => {
         <Grid picture={boat} price="$550.16" place="Paradise Beach, Bantayan Island" location="Rome, Italy" star="4.8"/>
         <Grid picture={sky} price="$550.16" place="Paradise Beach, Bantayan Island" location="Rome, Italy" star="4.8"/>
         <Grid picture={boat} price="$550.16" place="Paradise Beach, Bantayan Island" location="Rome, Italy" star="4.8"/>
-        <Grid picture={boat} price="$550.16" place="Paradise Beach, Bantayan Island" location="Rome, Italy" star="4.8"/>
+        {/* <Grid picture={boat} price="$550.16" place="Paradise Beach, Bantayan Island" location="Rome, Italy" star="4.8"/> */}
         
       </div>
 
