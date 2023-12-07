@@ -1,6 +1,7 @@
 import boat from "../assets/beach.png";
-import fish from "../assets/fish.png";
+// import fish from "../assets/fish.png";
 import sky from "../assets/sky.png";
+import Grid from "./reusable/destinationTemplate.jsx"
 const destination = () => {
   return (
     <div>
@@ -16,37 +17,12 @@ const destination = () => {
           Explore the top destination
         </div>
       </div>
-      <div className="py-10 px-4"> 
-        <div className="border-2 rounded-3xl my-5 shadow-2xl  ">
-            <div >
-            <img src={boat} alt="/" /></div>
-            <div className="px-5 py-6 ">
-                <h5 className="text-[#f85e9f] text-lg font-bold">$550.16</h5>
-                <p className="text-black text-xl font-bold">Paradise Beach, Bantayan Island</p>
-                <p className="font-thin text-gray-500 py-4">Rome, Italy</p>
-                <h6 className="text-[#ff5722] font-bold text-lg">4.8</h6>
-            </div>
-        </div>
-        <div className="border-2 rounded-3xl my-5 shadow-2xl  ">
-            <div >
-            <img src={fish} alt="/" /></div>
-            <div className="px-5 py-6 ">
-                <h5 className="text-[#f85e9f] text-lg font-bold">$550.16</h5>
-                <p className="text-black text-xl font-bold">Paradise Beach, Bantayan Island</p>
-                <p className="font-thin text-gray-500 py-4">Rome, Italy</p>
-                <h6 className="text-[#ff5722] font-bold text-lg">4.8</h6>
-            </div>
-        </div>
-        <div className="border-2 rounded-3xl my-5 shadow-2xl  ">
-            <div >
-            <img src={sky} alt="/" /></div>
-            <div className="px-5 py-6 ">
-                <h5 className="text-[#f85e9f] text-lg font-bold">$550.16</h5>
-                <p className="text-black text-xl font-bold">Paradise Beach, Bantayan Island</p>
-                <p className="font-thin text-gray-500 py-4">Rome, Italy</p>
-                <h6 className="text-[#ff5722] font-bold text-lg">4.8</h6>
-            </div>
-        </div>
+      <div className="py-10 px-4 flex flex-col items-center xl:grid xl:grid-flow-col xl:gap-6 xl:justify-center"> 
+        <Grid picture={boat} price="$550.16" place="Paradise Beach, Bantayan Island" location="Rome, Italy" star="4.8"/>
+        <Grid picture={sky} price="$550.16" place="Paradise Beach, Bantayan Island" location="Rome, Italy" star="4.8"/>
+        <Grid picture={boat} price="$550.16" place="Paradise Beach, Bantayan Island" location="Rome, Italy" star="4.8"/>
+        {/* <Grid picture={boat} price="$550.16" place="Paradise Beach, Bantayan Island" location="Rome, Italy" star="4.8"/> */}
+       
       </div>
 
     </div>
