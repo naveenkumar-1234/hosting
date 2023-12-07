@@ -1,3 +1,4 @@
+
 import boat from "../assets/beach.png";
 // import fish from "../assets/fish.png";
 import sky from "../assets/sky.png";
@@ -17,12 +18,16 @@ const destination = () => {
           Explore the top destination
         </div>
       </div>
-      <div className="py-10 px-4 flex flex-col items-center xl:grid xl:grid-flow-col xl:gap-6 xl:justify-center"> 
+      <div className="py-10 px-4 flex flex-col items-center xl:grid xl:grid-flow-col xl:gap-6 xl:justify-center
+      xl:overflow-x-auto "> 
+     
         <Grid picture={boat} price="$550.16" place="Paradise Beach, Bantayan Island" location="Rome, Italy" star="4.8"/>
         <Grid picture={sky} price="$550.16" place="Paradise Beach, Bantayan Island" location="Rome, Italy" star="4.8"/>
         <Grid picture={boat} price="$550.16" place="Paradise Beach, Bantayan Island" location="Rome, Italy" star="4.8"/>
-        {/* <Grid picture={boat} price="$550.16" place="Paradise Beach, Bantayan Island" location="Rome, Italy" star="4.8"/> */}
-       
+        <Grid picture={boat} price="$550.16" place="Paradise Beach, Bantayan Island" location="Rome, Italy" star="4.8"/>
+        <Grid picture={boat} price="$550.16" place="Paradise Beach, Bantayan Island" location="Rome, Italy" star="4.8"/>
+        <Grid picture={boat} price="$550.16" place="Paradise Beach, Bantayan Island" location="Rome, Italy" star="4.8"/>
+        
       </div>
 
     </div>

@@ -2,6 +2,10 @@ import menuBar from "../assets/menuBar.svg";
 import logo from "../assets/BrandLogo.png";
 
 const NavBar = () => {
+  const navbar=false;
+  const Press=()=>{
+   console.log(navbar);
+  }
   return (
     <div className="mx-auto flex items-center px-4 py-9 justify-between lg:justify-between">
       <div className="flex align-center text-2xl">
@@ -29,7 +33,7 @@ const NavBar = () => {
         </button>
       </div>
       <div className="lg:hidden md:hidden  ">
-        <img src={menuBar} alt="/" />
+        <img src={menuBar} alt="/" onClick={Press}/>
       </div>
     </div>
   );
