@@ -1,10 +1,13 @@
 import travelImage from "../assets/Home.png";
-import bag from "../assets/bag.png";
+import BagIcon from "../assets/BagIcon.png";
+  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+  import { faPlay } from '@fortawesome/free-solid-svg-icons';
+  
 
 const HomePage = () => {
   return (
     <div className=" grid lg:grid-flow-col lg:grid-cols-2 xl:px-4 lg:gap-5 ">
-      <div className="lg:order-last">
+      <div className="lg:order-last ">
         <img src={travelImage} alt="/" className="w-full lg:" />
       </div>
       <div className="lg:order-1">
@@ -15,7 +18,7 @@ const HomePage = () => {
           >
             Explore the world!{" "}
           </h3>
-          <img className=" h-auto" src={bag} alt="" />{" "}
+          <img className=" h-auto" src={BagIcon} alt="" />{" "}
         </div>
         <div className="flex flex-col">
           <div
@@ -23,9 +26,7 @@ const HomePage = () => {
           xl:text-7xl lg:text-left lg:px-24 lg:leading-tight 
           md:px-24 md:text-6xl 
           lg:text-5xl 
-          
-          
-          "
+            "
           >
             Travel <span className="text-[#f85e9f] ">top destination</span> of
             the world
@@ -63,7 +64,8 @@ const HomePage = () => {
           
           "
             >
-              Watch Demo
+              <FontAwesomeIcon icon={faPlay} className="mr-2"/>
+            Watch Demo
             </button>
           </div>
         </div>

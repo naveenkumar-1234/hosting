@@ -1,7 +1,6 @@
-
 const destinationTemplate = (props) => {
   return (
-    <div className="border-2 rounded-3xl my-5 shadow-2xl w-fit  ">
+    <div className="border-2 rounded-[2.5rem]   w-fit min-w-[300px] lg:min-h-[500px] m-5">
             <div >
             <img src={props.picture} alt="/" className="lg:h-auto"/></div>
             <div className="px-5 py-6  ">

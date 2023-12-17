@@ -1,31 +1,50 @@
-import Logo from "../assets/BrandLogo.png";
-import Facebook from "../assets/FB.png";
-import Twitter from "../assets/TW.png";
-import Instagram from "../assets/IG.png";
-import arrow from "../assets/arrow.png";
+import Logo from "./assets/BrandLogo.png";
+import Facebook from "./assets/FB.png";
+import Twitter from "./assets/TW.png";
+import Instagram from "./assets/IG.png";
+import arrow from "./assets/arrow.png";
 import { useState } from "react";
 const Footer = () => {
    const [isVisible,SetVisible]=useState(false)
    const toggle=()=>{
+    if(isVisible2){
+      SetVisible2(!isVisible2);
+    }
+    if(isVisible3){
+      setVisible3(!isVisible3)
+    }
     SetVisible(!isVisible)
    }
    const [isVisible2,SetVisible2]=useState(false)
    const toggle2=()=>{
+    if(isVisible){
+      SetVisible(!isVisible);
+    }
+    if(isVisible3){
+      setVisible3(!isVisible3)
+    }
     SetVisible2(!isVisible2)
    }
    const [isVisible3,setVisible3]=useState(false)
    const toggle3=()=>{
+    if(isVisible){
+      SetVisible(!isVisible);
+    }
+    if(isVisible2){
+      SetVisible2(!isVisible2)
+    }
     setVisible3(!isVisible3)
    }
 
   return (
-    <div className="lg:flex bg-gray-100 py-6 rounded-tl-3xl rounded-tr-3xl">
+    <div className="lg:flex  py-6 rounded-tl-3xl rounded-tr-3xl">
       <div className=" lg:w-1/2 mx-5 ">
         <div className="lg:mx-16 flex items-center ">
           <img src={Logo} alt="/" className="lg:w-12" />
           <h4 className="font-poppins font-bold px-2 pt-1 lg:text-2xl text-lg">Travlog</h4>
         </div>
-        <p className="lg:ml-16 lg:my-7 text-gray-500 leading-8  py-8">
+        <p className="lg:ml-16 lg:my-7 text-gray-500 leading-8  py-3
+        lg:text-lg text-sm">
           Contrary to polpular belief, Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eos dolores distinctio quae, explicabo facilis aut recusandae iure amet, veritatis voluptatem. A enim libero id.
         </p>
         <div className="flex lg:mx-16">
@@ -36,7 +55,7 @@ const Footer = () => {
       </div>
       <div className="mx-7 lg:flex lg:w-1/2 justify-around">
         <div>
-          <h5 className="flex justify-between text-xl font-semibold my-6">Company <span onClick={toggle}><img src={arrow} alt=""  className="lg:hidden"/></span></h5>
+          <h5 className="flex justify-between text-xl font-semibold my-6">Company <span onClick={toggle}><img src={arrow} alt=""  className={`lg:hidden ${isVisible? 'rotate-180':''}`}/></span></h5>
           <ul className={`lg:block ${isVisible? 'visible':'hidden'}`}>
           <li className="pb-7 text-gray-500 text-lg">About</li>
           <li className="pb-7 text-gray-500 text-lg">Career</li>
@@ -46,7 +65,7 @@ const Footer = () => {
         </div>
         <div>
           <h5 className="flex justify-between text-xl font-semibold my-6">Contact
-          <span onClick={toggle2}><img src={arrow} alt="" className="lg:hidden" /></span></h5>
+          <span onClick={toggle2}><img src={arrow} alt="" className={`lg:hidden ${isVisible2? 'rotate-180':''}`} /></span></h5>
           <ul className={`lg:block ${isVisible2 ? '' : 'hidden'}`}>
             <li className="pb-7 text-gray-500 text-lg">About</li>
             <li className="pb-7 text-gray-500 text-lg">Parent with us</li>
@@ -57,7 +76,7 @@ const Footer = () => {
         </div>
         <div>
           <h5  className="flex justify-between text-xl font-semibold my-6">Meet Us
-          <span onClick={toggle3}><img src={arrow} alt="" className="lg:hidden" /></span></h5>
+          <span onClick={toggle3}><img src={arrow} alt="" className={`lg:hidden ${isVisible3? 'rotate-180':''}`} /></span></h5>
           <ul className={`lg:block ${isVisible3 ? '' :`hidden`}
           
           `}>
