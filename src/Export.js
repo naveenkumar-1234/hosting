@@ -8,19 +8,4 @@ import Footer from "./Pages/FooterPage/Footer";
 import Subscribe from "./Pages/SubscribePage/Subscribe";
 
 
-const FrontPage = () => {
-  return (
-    <>
-      <HomePage />
-      <Service />
-      <Destination />
-      <Travel />
-      <KeyFeature />
-      <Testimonials />
-      <Subscribe />
-      <Footer />
-    </>
-  );
-};
-
-export default FrontPage;
+export default{HomePage,Service,Destination,Travel,KeyFeature,Testimonials,Footer,Subscribe}

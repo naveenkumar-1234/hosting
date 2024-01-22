@@ -4,7 +4,7 @@ import Weather from "./assets/c3.png";
 import Template from "./ServiceTemplate.jsx"
 const Services = () => {
   return (
-    <div className="xl:grid lg:grid-cols-2">
+    <div id="service" className="xl:grid lg:grid-cols-2">
       <div className=" block text-center lg:col-span-1 lg:gap-5">
         <div className="text-[#fa86b7] uppercase font-semibold py-6
         xl:text-left lg:px-28 lg:py-7 xl:text-4xl lg:3xl lg:text-center lg:text-4xl 

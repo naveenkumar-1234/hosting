@@ -6,7 +6,7 @@ import Pin from "./assets/Pin.png";
 
 const KeyFeature = () => {
   return (
-    <div className="lg:grid lg:grid-cols-2">
+    <div id="key_feature" className="lg:grid lg:grid-cols-2">
       <div className="lg:col-span-1 lg:order-2">
         <img
           src={Image}

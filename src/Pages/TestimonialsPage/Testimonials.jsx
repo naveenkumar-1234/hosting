@@ -4,7 +4,7 @@ import ArrowCom from "./arrow.jsx"
 // import Bg from "../assets/BgImg.png"
 const Testimonials = () => {
   return (
-    <div className="relative">
+    <div  className="relative">
       <div className="flex flex-col ">
         <h3 className="text-[#fa86b7] uppercase text-center font-medium text-xl py-4 lg:text-3xl">Testimonials</h3>
         <p className="text-center text-3xl font-semibold lg:text-4xl"> Trust our clients</p>

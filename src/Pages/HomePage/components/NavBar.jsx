@@ -1,6 +1,7 @@
 import MenuIcon from "../assets/MenuIcon.svg";
 import Logo from "../assets/BrandLogo.png";
 import MenuCloseIcon from "../assets/Close.png";
+import { Link } from "react-scroll";
 import { useState } from "react";
 import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -63,24 +64,27 @@ const NavBar = () => {
           >
             Home
           </li>
+          <Link to="service" smooth={true} duration={1000} >
           <li
             className="lg:text-xl lg:px-7 hover:bg-[#6d48b2] rounded-3xl transform duration-300
             hover:text-white hover: lg:py-2 "
           >
             Discover
-          </li>
+          </li></Link>
+          <Link to="key_feature" smooth={true} duration={1500}>
           <li
             className="lg:text-xl lg:px-7 hover:bg-[#6d48b2] rounded-3xl transform duration-300
             hover:text-white hover: lg:py-2"
           >
             Special Deals
-          </li>
+          </li></Link>
+          <Link to="test" smooth={true} duration={2000}>
           <li
             className="lg:text-xl lg:px-7 hover:bg-[#6d48b2] rounded-3xl transform duration-300
             hover:text-white hover: lg:py-2"
           >
             Contact
-          </li>
+          </li></Link>
         </ul>
       </div>
       <div className="hidden md:flex ">
