@@ -7,7 +7,8 @@ export default defineConfig({
 
   )
 ],
-base:"/hosting/",
+// base:"/hosting/",
+base:"/",
  
     server: {
       host: '0.0.0.0',
